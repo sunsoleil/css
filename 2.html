@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+  <head>
+      <title>WEB1</title>
+      <meta charset="utf-8">
+      <style>
+      body{
+        margin:0;
+      }
+        a {
+          color:black;
+          text-decoration:none;
+        }
+        .saw {
+          color:gray;
+        }
+        #active {
+          color:red;
+        }
+
+        h1 {
+          font-size:60px;
+          text-align:center;
+          padding:20px;
+          border-bottom: 3px solid gray;
+          margin:0;
+        }
+
+        #grid ol {
+          border-right: 2px solid black;
+          width:100px;
+          padding:30px;
+          margin:0;
+          padding-left:40px;
+        }
+
+        #grid {
+          display:grid;
+          grid-template-columns:200px 1fr;
+        }
+
+        @media(max-width:800px) {
+          #grid {
+            display: block;
+          }
+        }
+        @media(max-width:800px) {
+          #grid ol {
+            border-right:0;
+          }
+        }
+        @media(max-width:800px) {
+          h1 {
+            border-bottom:0;
+          }
+        }
+
+      </style>
+  </head>
+
+
+  <body>
+      <h1><a href="index.html">WEB</a></h1>
+      <div id="grid">
+        <ol>
+        <li><a href="1.html" class="saw">html</a></li>
+        <li><a href="2.html" class="saw active" id="active">css</a></li>
+        <li><a href="3.html">javascript</a></li>
+        </ol>
+
+
+        <div>
+          <h2>HTML</h2>
+            hello web
+          <strong><u>fighting</u> <a href="https://www.google.co.kr/#spf=1618807347231">test</a></strong>
+
+          <p>vhlhhalcmiwvnituqioncuealfvhfljahlfhalhfjknlkacmfha.</p>
+          <img src="coding.jpg" width="75%">
+          <p style="margin-top:40px;">acjhlufknafvilnacafcafclmaacvdfa.</p>
+          <p>acvlhsdfaiuahbuiwnyelfavcinadval</p>
+        </div>
+      </div>
+
+  </body>
+</html>
